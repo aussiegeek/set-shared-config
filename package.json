@@ -50,5 +50,10 @@
     "test": "jest",
     "build": "rollup -c",
     "watch": "rollup -c --watch"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
