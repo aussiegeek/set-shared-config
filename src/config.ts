@@ -1,4 +1,12 @@
-export const devDepPackages = ["prettier", "jest", "ts-jest", "eslint"];
+export const devDepPackages = [
+  "eslint",
+  "husky",
+  "jest",
+  "lint-staged",
+  "prettier",
+  "sort-package-json",
+  "ts-jest",
+];
 
 export const defaultPackageJSON = {
   jest: {
@@ -14,5 +22,15 @@ export const defaultPackageJSON = {
     ci:
       "yarn prettier:check && yarn lint:check && yarn types:check && yarn test",
     test: "jest",
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,yml,yaml,css,md}": "prettier --write",
+    "*.{ts,tsx}": "eslint --fix",
+    "package.json": "sort-package-json",
+  },
+  husky: {
+    hooks: {
+      "pre-commit": "lint-staged",
+    },
   },
 };
