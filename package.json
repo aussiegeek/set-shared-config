@@ -10,6 +10,9 @@
   "bin": {
     "set-shared-config": "dist/bin/set-shared-config.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "github:aussiegeek/set-shared-config",
   "license": "MIT",
   "version": "0.0.1",
