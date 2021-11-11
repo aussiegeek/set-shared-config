@@ -61,7 +61,7 @@
     "prettier": "2.2.1",
     "rollup": "2.59.0",
     "rollup-plugin-typescript2": "0.30.0",
-    "sort-package-json": "1.52.0",
+    "sort-package-json": "1.53.0",
     "ts-jest": "26.5.2",
     "ts-node": "9.1.1",
     "tslib": "2.3.1",
